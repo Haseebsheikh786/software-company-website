@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* home top section  */
+.home-section {
+    height: 100vh;
+    background-image: url("https://plus.unsplash.com/premium_photo-1661953290930-40893d2db03f?q=80&w=1442&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-section::after {
+    /* Adding overlay effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black overlay */
+    backdrop-filter: blur(0px);
+    /* Adding blur effect */
+}
+
+.home-content {
+    width: 40vw;
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.home-content h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: .3rem;
+}
+
+.home-content h3 {
+    color: rgb(221, 212, 212);
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: .3rem;
+}
+
+.home-content p {
+    color: rgb(221, 212, 212);
+    font-size: 18px;
+
+}
+
+.home-content-btn {
+    margin-top: 4rem;
+}
+
+.services-section {
+    background-color: #eef6fd;
+    padding: 5rem 0;
+}
+
+.services-section h2,
+.portfolio-section h1,
+.get-in-touch-section h2,
+.our-clients h2,
+.about-us-section h1 {
+    color: #274D82;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* portfolio section  */
+.portfolio-section {
+    padding: 5rem 0;
+}
+
+.portfolio-section h5,
+.get-in-touch-section p,
+.our-clients p,
+.about-us-section p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.portfolio {
+    position: relative;
+    width: 40%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Get in Touch section styles */
+.get-in-touch-section {
+    text-align: center;
+    padding: 5rem .8rem;
+}
+
+
+.get-in-touch-section-service {
+    background-color: #eef6fd;
+}
+
+
+/* home section media quereies  */
+@media only screen and (max-width: 950px) {
+    .home-content {
+        width: 90%;
+        left: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-content {
+        width: 90%;
+        left: 50%;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .services-section h2,
+    .portfolio-section h1,
+    .get-in-touch-section h2,
+    .our-clients h2,
+    .about-us-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-section h5,
+    .get-in-touch-section p,
+    .our-clients p,
+    .about-us-section p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio {
+        position: relative;
+        width: 88%;
+        height: 450px;
+        overflow: hidden;
+        margin: 1.5rem auto;
+    }
+}
