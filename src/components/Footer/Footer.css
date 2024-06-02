@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: rgb(5, 10, 53);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -21,7 +21,7 @@
 .footer-nav a {
     margin: 0 10px;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .footer-social {

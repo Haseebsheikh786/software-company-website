@@ -7,7 +7,7 @@ import { Button } from "reactstrap";
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
- 
+
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -79,9 +79,7 @@ const Header = () => {
             Contact
           </NavLink>
           <a href="tel:+923427282514" style={{ textDecoration: "none" }}>
-            <Button color="primary" className="btnQuote">
-              REQUEST QUOTE
-            </Button>
+            <button className="btnQuote btn btn-primary">REQUEST QUOTE</button>
           </a>
         </div>
         <div className="burger" onClick={toggleNav}>

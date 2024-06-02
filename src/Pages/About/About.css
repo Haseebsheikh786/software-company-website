@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 83%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     /* Semi-transparent black overlay */
     backdrop-filter: blur(0px);
@@ -24,7 +24,7 @@
 .about-content {
     /* Black w/opacity/see-through */
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -54,8 +54,8 @@
 /* about cards  */
 .cards-container {
     position: absolute;
-    top: 70%;
-    z-index: 2;
+    top: 79%;
+    z-index: 10;
     display: flex;
     justify-content: center;
 }
@@ -100,9 +100,9 @@
     align-items: center;
 }
 
-.AboutContainerColor { 
+.AboutContainerColor {
     background-color: #eef6fd;
-    padding-top: 20rem;
+    padding-top: 15rem;
 }
 
 .AboutContainer p {
@@ -121,14 +121,14 @@
     padding-left: 5rem;
 }
 
-.serviceProcessList h3{
+.serviceProcessList h3 {
     color: #274D82;
     font-size: 1.3rem;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-.team-image img{
+.team-image img {
     width: 100%;
     height: 100%;
 }
@@ -143,13 +143,13 @@
     background-color: #eef6fd;
 }
 
-.about-team{
+.about-team {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
 }
 
-.icon { 
+.icon {
     height: 150px;
     width: 150px;
     padding: 2px;
@@ -164,12 +164,12 @@
     object-fit: cover;
 }
 
-.about-us-section h5{
+.about-us-section h5 {
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.about-us-section h6{
+.about-us-section h6 {
     font-size: 1.1rem;
     color: rgb(112, 109, 109);
 }
@@ -230,82 +230,90 @@
         margin: 1rem;
     }
 }
+
 @media only screen and (max-width: 1199px) {
     .ServiceAboutContainer {
         padding: 5rem 4rem;
         flex-direction: column;
     }
+
     .ServiceAboutContainer .serviceProcessList {
         padding-right: .3rem;
         padding-left: 0rem;
         margin-top: 3rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .AboutContainer {
         padding: 5rem 1.5rem;
         flex-direction: column;
     }
-    .AboutContainerColor { 
-        padding-top: 53rem;
+
+    .AboutContainerColor {
+        padding-top: 48rem;
     }
-     .serviceProcessList {
+
+    .serviceProcessList {
         padding-right: .3rem;
         padding-left: 0rem;
         margin-top: 3rem;
     }
 }
+
 @media only screen and (max-width: 840px) {
-    .AboutContainerColor { 
-        padding-top: 56rem;
+    .AboutContainerColor {
+        padding-top: 51rem;
     }
 }
+
 @media only screen and (max-width: 756px) {
-    .AboutContainerColor { 
-        padding-top: 58rem;
+    .AboutContainerColor {
+        padding-top: 53rem;
     }
 }
+
 @media only screen and (max-width: 625px) {
-    .AboutContainerColor { 
-        padding-top: 60rem;
+    .AboutContainerColor {
+        padding-top: 55rem;
     }
 }
+
 @media only screen and (max-width: 600px) {
-    .AboutContainerColor { 
-        padding-top: 49rem;
+    .AboutContainerColor {
+        padding-top: 44rem;
     }
-    .AboutContainer h1{
-     font-size: 1.8rem;   
+
+    .AboutContainer h1 {
+        font-size: 1.8rem;
     }
+
     .AboutContainer p {
         font-size: 1rem;
         text-align: justify;
     }
 
-    .about-us-section{
+    .about-us-section {
         margin: 0 1rem;
     }
 
-    .about-team{
+    .about-team {
         flex-direction: column;
     }
 
-    .team-card{
+    .team-card {
         margin-bottom: 2rem;
     }
-    .team-card:nth-child(3){
+
+    .team-card:nth-child(3) {
         margin-bottom: 0rem;
     }
+}
 
-    
-}
 @media only screen and (max-width: 415px) {
-    .AboutContainerColor { 
-        padding-top: 52rem;
+    .AboutContainerColor {
+        padding-top: 48rem;
     }
 }
-@media only screen and (max-width: 363px) {
-    .AboutContainerColor { 
-        padding-top: 54rem;
-    }
-}
+
+ 

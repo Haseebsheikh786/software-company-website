@@ -11,6 +11,9 @@ import image2 from "../../assets/images/1.jpg";
 import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
 import { FaShopify } from "react-icons/fa";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
+import AnimatedSection from "../../components/AnimatedSection";
 const servicesData = [
   {
     title: "Software Development",
@@ -73,122 +76,147 @@ const Content = styled.div`
 `;
 
 // The main Portfolio section
-const Portfolio = () => (
-  <>
-    <div className="home-section">
-      <div className="home-content">
-        <h3>Providing digital solutions for your business</h3>
-        <h1>We are a team of expert developers</h1>
-        <p>We have expertise in Website Development and Desktop applications</p>
-        <Link to="/demo" className="btn btn-primary home-content-btn">
-          GET STARTED
-        </Link>
-      </div>
-    </div>
-    <section className="services-section">
-      <h2 className="text-center pb-5">How can we help you?</h2>
-      <div className="services-grid">
-        {servicesData.map((service, index) => (
-          <divx className="service-card" key={index}>
-            <i className={service.icon}></i>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </divx>
-        ))}
-      </div>
-    </section>
-    <section className="portfolio-section">
-      <h1 className="text-center mb-2">Portfolio</h1>
-      <h5 className="text-center pb-5">
-        Here is our portfolio which represents our connection with our clients
-      </h5>
-      <div className="d-md-flex justify-content-evenly">
-        <Container>
-          <img
-            src={portfolio3}
-            style={{ width: "100%", objectFit: "contain" }}
-            alt="portfolio"
-          />
-        </Container>
-        <Container>
-          <img
-            src={portfolio4}
-            style={{ width: "100%", objectFit: "contain" }}
-            alt="portfolio"
-          />
-        </Container>
-      </div>
-      <div className="d-md-flex justify-content-evenly pt-md-5">
-        <Container>
-          <img
-            src={portfolio1}
-            style={{ width: "100%", objectFit: "contain" }}
-            alt="portfolio"
-          />
-        </Container>
-        <Container>
-          <img
-            src={portfolio2}
-            style={{ width: "100%", objectFit: "contain" }}
-            alt="portfolio"
-          />
-        </Container>
-      </div>
-    </section>
-    <div className="about-us-section about-us-section-color">
-        <h1 className="text-center">Amazing Designs and Quality Work</h1>
-        <p className="text-center">
-          Our main purpose is to provide attractive and amazing designs while
-          maintaining strict quality standards
-        </p>
-        <div className="d-flex flex-column align-items-center mt-3">
-          <div className="icon">
-            <img className="image-icon" src={image} />
+const Portfolio = () => {
+  return (
+    <>
+      <AnimatedSection animationType="translateY" animationDistance="500px">
+        <div className="home-section">
+          <div className="home-content">
+            <h3>Providing digital solutions for your business</h3>
+            <h1>We are a team of expert developers</h1>
+            <p>
+              We have expertise in Website Development and Desktop applications
+            </p>
+            <Link to="/demo" className="btn btn-primary home-content-btn">
+              GET STARTED
+            </Link>
           </div>
-          <h5>Haseeb Farrukh</h5>
-          <h6>FOUNDER</h6>
         </div>
-        <div className="mt-5">
-          {" "}
-          <h1 className="text-center">Meet our leadership</h1>
+      </AnimatedSection>
+
+      <AnimatedSection animationType="translateY" animationDistance="300px">
+        <section className="services-section">
+          <h2 className="text-center pb-5">How can we help you?</h2>
+          <div className="services-grid">
+            {servicesData.map((service, index) => (
+              <divx className="service-card" key={index}>
+                <i className={service.icon}></i>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </divx>
+            ))}
+          </div>
+        </section>
+      </AnimatedSection>
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        threshold="0.1"
+      >
+        <section className="portfolio-section">
+          <h1 className="text-center mb-2">Portfolio</h1>
+          <h5 className="text-center pb-5">
+            Here is our portfolio which represents our connection with our
+            clients
+          </h5>
+          <div className="d-md-flex justify-content-evenly">
+            <Container>
+              <img
+                src={portfolio3}
+                style={{ width: "100%", objectFit: "contain" }}
+                alt="portfolio"
+              />
+            </Container>
+            <Container>
+              <img
+                src={portfolio4}
+                style={{ width: "100%", objectFit: "contain" }}
+                alt="portfolio"
+              />
+            </Container>
+          </div>
+          <div className="d-md-flex justify-content-evenly pt-md-5">
+            <Container>
+              <img
+                src={portfolio1}
+                style={{ width: "100%", objectFit: "contain" }}
+                alt="portfolio"
+              />
+            </Container>
+            <Container>
+              <img
+                src={portfolio2}
+                style={{ width: "100%", objectFit: "contain" }}
+                alt="portfolio"
+              />
+            </Container>
+          </div>
+        </section>
+      </AnimatedSection>
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        threshold="0.1"
+      >
+        <div className="about-us-section about-us-section-color">
+          <h1 className="text-center">Amazing Designs and Quality Work</h1>
           <p className="text-center">
-            At Code Zento, we have been helping our clients to tell their story
-            since 2020, making sure they reach a wider audience
+            Our main purpose is to provide attractive and amazing designs while
+            maintaining strict quality standards
           </p>
-          <div className="about-team">
-          <div className="team-card d-flex flex-column align-items-center">
+          <div className="d-flex flex-column align-items-center mt-3">
             <div className="icon">
               <img className="image-icon" src={image} />
             </div>
             <h5>Haseeb Farrukh</h5>
             <h6>FOUNDER</h6>
           </div>
-          <div className="team-card d-flex flex-column align-items-center">
-            <div className="icon">
-              <img className="image-icon" src={image} />
+          <div className="mt-5">
+            {" "}
+            <h1 className="text-center">Meet our leadership</h1>
+            <p className="text-center">
+              At Code Zento, we have been helping our clients to tell their
+              story since 2020, making sure they reach a wider audience
+            </p>
+            <div className="about-team">
+              <div className="team-card d-flex flex-column align-items-center">
+                <div className="icon">
+                  <img className="image-icon" src={image} />
+                </div>
+                <h5>Haseeb Farrukh</h5>
+                <h6>FOUNDER</h6>
+              </div>
+              <div className="team-card d-flex flex-column align-items-center">
+                <div className="icon">
+                  <img className="image-icon" src={image} />
+                </div>
+                <h5>Haseeb Farrukh</h5>
+                <h6>FOUNDER</h6>
+              </div>
+              <div className="team-card d-flex flex-column align-items-center">
+                <div className="icon">
+                  <img className="image-icon" src={image} />
+                </div>
+                <h5>Haseeb Farrukh</h5>
+                <h6>FOUNDER</h6>
+              </div>
             </div>
-            <h5>Haseeb Farrukh</h5>
-            <h6>FOUNDER</h6>
           </div>
-          <div className="team-card d-flex flex-column align-items-center">
-            <div className="icon">
-              <img className="image-icon" src={image} />
-            </div>
-            <h5>Haseeb Farrukh</h5>
-            <h6>FOUNDER</h6>
-          </div>
-        
         </div>
-        </div>
-      </div>
-    <section className="get-in-touch-section">
-      <h2>Get in Touch</h2>
-      <p>Ready to elevate your digital presence? Let's discuss your project!</p>
-      <Link to="/contact">
-        <button className="btn btn-primary">Contact Us</button>
-      </Link>
-    </section>
-  </>
-);
+      </AnimatedSection>
+      <AnimatedSection animationType="translateY" animationDistance="300px">
+        <section className="get-in-touch-section">
+          <h2>Get in Touch</h2>
+          <p>
+            Ready to elevate your digital presence? Let's discuss your project!
+          </p>
+          <Link to="/contact">
+            <button className="btn btn-primary">Contact Us</button>
+          </Link>
+        </section>
+      </AnimatedSection>
+    </>
+  );
+};
 
 export default Portfolio;
