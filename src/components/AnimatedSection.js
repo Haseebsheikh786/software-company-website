@@ -9,6 +9,7 @@ const AnimatedSection = ({
   animationType = "translateY",
   animationDistance = "100px",
   triggerOnce = true,
+  direction = "up", // new prop to control the direction
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: triggerOnce,
@@ -19,11 +20,10 @@ const AnimatedSection = ({
 
   switch (animationType) {
     case "translateY":
+      const translateYValue = direction === "up" ? `-${animationDistance}` : animationDistance;
       animationProps = {
         opacity: inView ? 1 : 0,
-        transform: inView
-          ? "translateY(0)"
-          : `translateY(-${animationDistance})`,
+        transform: inView ? "translateY(0)" : `translateY(${translateYValue})`,
         config: { tension: 18, friction: 10 },
       };
       break;

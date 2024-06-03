@@ -56,7 +56,12 @@ const Services = () => {
           </div>
         </div>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        direction="down"
+        threshold="0.3"
+      >
         <section className="services-section">
           <div className="services-grid">
             {servicesData.map((service, index) => (
@@ -76,7 +81,8 @@ const Services = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.2"
+        threshold="0.1"
+        direction="down"
       >
         <div className="AboutContainer ServiceAboutContainer">
           <div className="col-sm-12 col-xl-5 team-image ">
@@ -130,6 +136,7 @@ const Services = () => {
         animationType="translateY"
         animationDistance="300px"
         threshold="0.2"
+        direction="down"
       >
         <section className="flip-section">
           <h3 className="text-center mb-5">
@@ -267,7 +274,11 @@ const Services = () => {
           </div>
         </section>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px">
+      <AnimatedSection
+        direction="down"
+        animationType="translateY"
+        animationDistance="300px"
+      >
         <section className="our-clients">
           <div class="container">
             <h2>Our Customers</h2>
@@ -293,7 +304,12 @@ const Services = () => {
           </div>
         </section>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        direction="down"
+        threshold="0.2"
+      >
         <section className="get-in-touch-section get-in-touch-section-service">
           <h2>Get in Touch</h2>
           <p className="text-center">

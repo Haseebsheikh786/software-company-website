@@ -66,6 +66,7 @@ const AboutUs = () => {
           animationType="translateY"
           animationDistance="300px"
           threshold="0.3"
+          direction="down"
         >
           <div className="AboutContainer">
             <div className="col-sm-12 col-lg-5 team-image">
@@ -94,6 +95,7 @@ const AboutUs = () => {
         animationType="translateY"
         animationDistance="300px"
         threshold="0.2"
+        direction="down"
       >
         <div className="about-us-section">
           <h1 className="text-center">Amazing Designs and Quality Work</h1>

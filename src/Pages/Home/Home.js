@@ -94,7 +94,12 @@ const Portfolio = () => {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animationType="translateY" animationDistance="300px">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        threshold="0.3"
+        direction="down"
+      >
         <section className="services-section">
           <h2 className="text-center pb-5">How can we help you?</h2>
           <div className="services-grid">
@@ -112,10 +117,11 @@ const Portfolio = () => {
         animationType="translateY"
         animationDistance="300px"
         threshold="0.1"
+        direction="down"
       >
         <section className="portfolio-section">
           <h1 className="text-center mb-2">Portfolio</h1>
-          <h5 className="text-center pb-5">
+          <h5 className="text-center pb-md-5 ">
             Here is our portfolio which represents our connection with our
             clients
           </h5>
@@ -135,7 +141,7 @@ const Portfolio = () => {
               />
             </Container>
           </div>
-          <div className="d-md-flex justify-content-evenly pt-md-5">
+          <div className="d-md-flex justify-content-evenly pt-md-5 mt-md-3">
             <Container>
               <img
                 src={portfolio1}
@@ -157,6 +163,7 @@ const Portfolio = () => {
         animationType="translateY"
         animationDistance="300px"
         threshold="0.1"
+        direction="down"
       >
         <div className="about-us-section about-us-section-color">
           <h1 className="text-center">Amazing Designs and Quality Work</h1>
@@ -204,7 +211,11 @@ const Portfolio = () => {
           </div>
         </div>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        direction="down"
+      >
         <section className="get-in-touch-section">
           <h2>Get in Touch</h2>
           <p>

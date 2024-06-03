@@ -53,6 +53,7 @@ const ContactUS = () => {
         animationType="translateY"
         animationDistance="300px"
         threshold="0.2"
+        direction="down"
       >
         <div className="contact-container">
           <div className=" infoContainer text-start">
