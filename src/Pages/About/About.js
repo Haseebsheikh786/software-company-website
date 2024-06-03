@@ -12,7 +12,7 @@ import AnimatedSection from "../../components/AnimatedSection";
 const AboutUs = () => {
   return (
     <>
-      <AnimatedSection animationType="translateY" animationDistance="500px">
+      <AnimatedSection animationType="translateY" animationDistance="300px">
         <div className="about-section">
           <div className="about-content">
             <h1>About Us</h1>

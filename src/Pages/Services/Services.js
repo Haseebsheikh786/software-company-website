@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "./Services.css"; // Import CSS file for styling
 import WhoWeAre from "../../assets/images/offer.jpg";
-import client1 from "../../assets/images/max_magazne-logo2 1.png";
-import client2 from "../../assets/images/logo.png";
-import client3 from "../../assets/images/apple-touch-icon-60x60.png";
-import client4 from "../../assets/images/Royal.png";
+import client1 from "../../assets/images/clientLogo3.png";
+import client2 from "../../assets/images/clientLogo2.png";
+import client3 from "../../assets/images/clientLogo1.png";
 import client5 from "../../assets/images/devikons.png";
-import client6 from "../../assets/images/falconz.png";
-import { Card, Col, Container, Label, Row } from "reactstrap";
+import client7 from "../../assets/images/apple-touch-icon-120x120.png";
 import { Link } from "react-router-dom";
-import { TiTick } from "react-icons/ti";
 import { FaCheck } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa6";
 import AnimatedSection from "../../components/AnimatedSection";
@@ -51,7 +48,7 @@ const Services = () => {
 
   return (
     <>
-      <AnimatedSection animationType="translateY" animationDistance="500px">
+      <AnimatedSection animationType="translateY" animationDistance="300px">
         <div className="Service-section">
           <div className="Service-content">
             <h1>Custom Software Services</h1>
@@ -76,7 +73,11 @@ const Services = () => {
           </div>
         </section>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px"   threshold="0.2">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        threshold="0.2"
+      >
         <div className="AboutContainer ServiceAboutContainer">
           <div className="col-sm-12 col-xl-5 team-image ">
             <img src={WhoWeAre} />
@@ -125,7 +126,11 @@ const Services = () => {
           </div>
         </div>
       </AnimatedSection>
-      <AnimatedSection animationType="translateY" animationDistance="300px"   threshold="0.2">
+      <AnimatedSection
+        animationType="translateY"
+        animationDistance="300px"
+        threshold="0.2"
+      >
         <section className="flip-section">
           <h3 className="text-center mb-5">
             Choose Our Flexible Pricing Plan For Customizing Software
@@ -268,22 +273,21 @@ const Services = () => {
             <h2>Our Customers</h2>
             <p>We have a list of happy customers all around the world.</p>
             <p>
-              We are seeking forward to add you to the list of your happy
+              We are seeking forward to add you to the list of our happy
               clients.
             </p>
-            <div class="d-flex align-items-center justify-content-center mx-5 px-5 mt-4">
-              <div class="client mx-3">
+            <div class="d-md-flex align-items-center justify-content-center">
+              <div class="client">
+                <img src={client3} alt="Client 1" />
+              </div>
+              <div class="client">
                 <img src={client2} alt="Client 1" />
               </div>
-              <div class="client mx-3">
-                <img src={client5} alt="Client 1" />
-              </div>
-              <div class="client mx-3">
+              <div class="client">
                 <img src={client1} alt="Client 1" />
               </div>
-
-              <div class="client mx-3">
-                <img src={client3} alt="Client 1" />
+              <div class="client">
+                <img src={client5} alt="Client 1" />
               </div>
             </div>
           </div>

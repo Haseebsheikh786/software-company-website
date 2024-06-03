@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0px 30px;
     color: white;
-    background-color: rgb(5, 10, 53);
+    background-color: #100527;
     z-index: 1;
     position: fixed;
     width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .logo img {
-    height: 120px;
+    height: 100px;
     padding-left: 1rem;
 }
 
@@ -76,9 +76,9 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: rgb(5, 5, 5);
+        background-color: #100527;
         width: 100%;
-        top: 92px;
+        top: 107px;
         left: 0;
         transition: all 0.5s ease-in;
         align-items: start;
@@ -91,7 +91,7 @@
     }
 
     .logo img {
-        height: 70px;
+        height: 85px;
         padding-left: 0rem;
     }
 

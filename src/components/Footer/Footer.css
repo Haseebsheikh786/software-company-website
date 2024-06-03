@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgb(5, 10, 53);
+    background-color: #100527;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -10,7 +10,7 @@
 }
 
 .footer-logo img {
-    max-width: 150px;
+    height: 100px;
 }
 
 .footer-nav {
@@ -39,4 +39,10 @@
 
 p {
     margin: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .footer-logo img{
+        height: 85px;
+    }
 }

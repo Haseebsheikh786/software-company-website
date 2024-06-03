@@ -79,7 +79,7 @@ const Content = styled.div`
 const Portfolio = () => {
   return (
     <>
-      <AnimatedSection animationType="translateY" animationDistance="500px">
+      <AnimatedSection animationType="translateY" animationDistance="300px">
         <div className="home-section">
           <div className="home-content">
             <h3>Providing digital solutions for your business</h3>

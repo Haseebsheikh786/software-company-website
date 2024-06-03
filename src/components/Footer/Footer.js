@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo2.jpg";
+import logo from "../../assets/images/logoBlue (2).png";
 import { NavLink } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-row">
-        <p>&copy; 2024 CODE ZENTO. All rights reserved.</p>
+        <p>&copy; 2024 H WEB Dynamics. All rights reserved.</p>
       </div>
     </footer>
   );
