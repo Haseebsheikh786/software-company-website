@@ -1,7 +1,7 @@
 /* about top section */
 .Service-section {
     height: 80vh;
-    background-image: url("https://plus.unsplash.com/premium_photo-1661953290930-40893d2db03f?q=80&w=1442&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../../assets/images/bg-image.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +65,7 @@
 }
 
 .service-card p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: black;
 }
 
@@ -237,7 +237,7 @@
     .services-grid {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(2, 46%);
     }
 
     .service-card {
@@ -245,12 +245,23 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 48%);
+    }
+}
 @media only screen and (max-width: 600px) {
     .services-grid {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1, 90%);
+        grid-template-columns: repeat(1, 93%);
     }
+
+    .service-card p {
+        font-size: 1rem;
+        color: black;
+    }
+    
 
 
 }

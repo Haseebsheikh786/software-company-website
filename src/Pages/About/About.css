@@ -1,7 +1,7 @@
 /* about top section */
 .about-section {
     height: 83vh;
-    background-image: url("https://plus.unsplash.com/premium_photo-1661953290930-40893d2db03f?q=80&w=1442&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../../assets/images/bg-image.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .about-content p {
-    color: rgb(221, 212, 212);
+    color: rgb(240, 236, 236);
     font-size: 18px;
 }
 
@@ -146,7 +146,7 @@
 .about-team {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin-top: 1.7rem;
 }
 
 .icon {
@@ -170,7 +170,7 @@
 }
 
 .about-us-section h6 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgb(112, 109, 109);
 }
 
@@ -198,6 +198,9 @@
 
 /* about cards mdeia quereis  */
 @media only screen and (max-width: 1300px) {
+    .cards-container {
+        margin: 0 1.7rem;
+    }
     .about-card {
         width: 30%;
     }
@@ -223,11 +226,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 1.5rem;
     }
 
     .about-card {
-        width: 90%;
-        margin: 1rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .about-card h3 {
+        font-size: 1.7rem;
     }
 }
 
@@ -294,7 +302,7 @@
     }
 
     .about-us-section {
-        margin: 0 1rem;
+        padding: 5rem 1.5rem;
     }
 
     .about-team {
@@ -315,5 +323,3 @@
         padding-top: 48rem;
     }
 }
-
- 

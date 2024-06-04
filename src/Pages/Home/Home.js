@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Card } from "reactstrap";
 import "./home.css";
 import portfolio1 from "../../assets/images/sc.png";
 import portfolio2 from "../../assets/images/sc2.png";
@@ -9,10 +8,7 @@ import portfolio4 from "../../assets/images/sc4.png";
 import image from "../../assets/images/MyPIC.jpg";
 import image2 from "../../assets/images/1.jpg";
 import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
-import { FaShopify } from "react-icons/fa";
 import styled from "styled-components";
-import { useSpring, animated } from "react-spring";
-import { useInView } from "react-intersection-observer";
 import AnimatedSection from "../../components/AnimatedSection";
 const servicesData = [
   {
@@ -49,7 +45,7 @@ const Container = ({ children }) => {
 
   useEffect(() => {
     if (contentRef.current) {
-      const containerHeight = 450; // fixed height of the container
+      const containerHeight = 500; // fixed height of the container
       const contentHeight = contentRef.current.scrollHeight; // dynamic content height
       const maxOffset = containerHeight - contentHeight; // maximum offset to scroll
       setTopOffset(isHovered ? `${maxOffset}px` : "0"); // scroll to the end on hover, back to top on leave
@@ -125,7 +121,7 @@ const Portfolio = () => {
             Here is our portfolio which represents our connection with our
             clients
           </h5>
-          <div className="d-md-flex justify-content-evenly">
+          <div className="d-md-flex justify-content-lg-around justify-content-md-between">
             <Container>
               <img
                 src={portfolio3}
@@ -141,7 +137,7 @@ const Portfolio = () => {
               />
             </Container>
           </div>
-          <div className="d-md-flex justify-content-evenly pt-md-5 mt-md-3">
+          <div className="d-md-flex justify-content-lg-around justify-content-md-between pt-md-5 mt-md-3">
             <Container>
               <img
                 src={portfolio1}
@@ -171,7 +167,7 @@ const Portfolio = () => {
             Our main purpose is to provide attractive and amazing designs while
             maintaining strict quality standards
           </p>
-          <div className="d-flex flex-column align-items-center mt-3">
+          <div className="d-flex flex-column align-items-center mt-4">
             <div className="icon">
               <img className="image-icon" src={image} />
             </div>
@@ -182,8 +178,8 @@ const Portfolio = () => {
             {" "}
             <h1 className="text-center">Meet our leadership</h1>
             <p className="text-center">
-              At Code Zento, we have been helping our clients to tell their
-              story since 2020, making sure they reach a wider audience
+              At H WEB Dynamics, we have been helping our clients to tell their
+              story since 2022, making sure they reach a wider audience
             </p>
             <div className="about-team">
               <div className="team-card d-flex flex-column align-items-center">
@@ -195,17 +191,17 @@ const Portfolio = () => {
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image3} />
                 </div>
                 <h5>Haseeb Farrukh</h5>
-                <h6>FOUNDER</h6>
+                <h6>Director</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image2} />
                 </div>
                 <h5>Haseeb Farrukh</h5>
-                <h6>FOUNDER</h6>
+                <h6>C.T.O</h6>
               </div>
             </div>
           </div>

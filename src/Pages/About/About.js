@@ -16,7 +16,7 @@ const AboutUs = () => {
         <div className="about-section">
           <div className="about-content">
             <h1>About Us</h1>
-            <h3>Welcome to the CODE ZENTO</h3>
+            <h3>Welcome to H WEB Dynamics</h3>
             <p>Quality, Efficiency, and Loyalty are our core values.</p>
           </div>
           <div className="cards-container">
@@ -25,7 +25,7 @@ const AboutUs = () => {
               <p>
                 Our engineers and developers join hands to provide complete
                 satisfaction to our clients. We utilize our knowledge to build
-                responsive websites, mobile, and desktop applications.
+                responsive websites and desktop applications.
               </p>
             </Card>
             <Card className=" about-card">
@@ -43,15 +43,15 @@ const AboutUs = () => {
               </div>
               <div className="d-flex align-items-center">
                 <MdArrowRight className="arrowIcon" />
-                <p>Marketing</p>
+                <p>eCommerce Store</p>
+              </div>
+              <div className="d-flex align-items-center">
+                <MdArrowRight className="arrowIcon" />
+                <p>WordPress</p>
               </div>
               <div className="d-flex align-items-center">
                 <MdArrowRight className="arrowIcon" />
                 <p>Social Media</p>
-              </div>
-              <div className="d-flex align-items-center">
-                <MdArrowRight className="arrowIcon" />
-                <p>eCommerce Store</p>
               </div>
               <div className="d-flex align-items-center">
                 <MdArrowRight className="arrowIcon" />
@@ -97,13 +97,13 @@ const AboutUs = () => {
         threshold="0.2"
         direction="down"
       >
-        <div className="about-us-section">
+       <div className="about-us-section">
           <h1 className="text-center">Amazing Designs and Quality Work</h1>
           <p className="text-center">
             Our main purpose is to provide attractive and amazing designs while
             maintaining strict quality standards
           </p>
-          <div className="d-flex flex-column align-items-center mt-3">
+          <div className="d-flex flex-column align-items-center mt-4">
             <div className="icon">
               <img className="image-icon" src={image} />
             </div>
@@ -114,8 +114,8 @@ const AboutUs = () => {
             {" "}
             <h1 className="text-center">Meet our leadership</h1>
             <p className="text-center">
-              At Code Zento, we have been helping our clients to tell their
-              story since 2020, making sure they reach a wider audience
+              At H WEB Dynamics, we have been helping our clients to tell their
+              story since 2022, making sure they reach a wider audience
             </p>
             <div className="about-team">
               <div className="team-card d-flex flex-column align-items-center">
@@ -127,17 +127,17 @@ const AboutUs = () => {
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image3} />
                 </div>
                 <h5>Haseeb Farrukh</h5>
-                <h6>FOUNDER</h6>
+                <h6>Director</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image2} />
                 </div>
                 <h5>Haseeb Farrukh</h5>
-                <h6>FOUNDER</h6>
+                <h6>C.T.O</h6>
               </div>
             </div>
           </div>
