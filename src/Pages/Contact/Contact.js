@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
 import { Card, FormGroup, Input, Label ,Spinner} from "reactstrap";
@@ -77,7 +77,7 @@ const ContactUS = () => {
               <Card className="py-3 cards">
                 <h5 className="d-flex mb-0">
                   <MdMail className="" />
-                  <b>info@codezento.com</b>
+                  <b>info@hwebdynamics.com</b>
                 </h5>
               </Card>
               <Card className="py-3 cards">

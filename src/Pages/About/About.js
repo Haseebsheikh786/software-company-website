@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css"; // Import CSS file for styling
 import { Link } from "react-router-dom";
 import { Card, Col, Container, Label, Row } from "reactstrap";
@@ -10,6 +10,7 @@ import { MdArrowRight } from "react-icons/md";
 import AnimatedSection from "../../components/AnimatedSection";
 
 const AboutUs = () => {
+   
   return (
     <>
       <AnimatedSection animationType="translateY" animationDistance="300px">
@@ -70,13 +71,13 @@ const AboutUs = () => {
         >
           <div className="AboutContainer">
             <div className="col-sm-12 col-lg-5 team-image">
-              <img src={WhoWeAre} />
+              <img src="https://img.freepik.com/free-photo/group-people-throwing-money-office_1303-15891.jpg?t=st=1717587477~exp=1717591077~hmac=b1a2299a5f17d4ffbc33c0a2a24fb6f5e34ad68b35b9ac00a4676e2781d6a130&w=900" />
             </div>
             <div className="col-sm-12 col-lg-6 serviceProcessList">
-              <h1 className="mb-3">Team CODE ZENTO</h1>
+              <h1 className="mb-3">Team H WEB Dynamics</h1>
               <p>
                 Developing a website and mobile app is a masterful field.
-                NEXTPAK AGILE SOLUTIONS is a cross-useful software advancement
+                H WEB Dynamics is a cross-useful software advancement
                 organization focused on planning and conveying new computerized
                 tools and services to organizations across enterprises and
                 verticals. We stick to a proactive, dynamic, and result-situated

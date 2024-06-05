@@ -66,7 +66,8 @@
 .portfolio-section h1,
 .get-in-touch-section h2,
 .our-clients h2,
-.about-us-section h1 {
+.about-us-section h1,
+.flip-section h3 {
     color: #274D82;
     font-size: 2.5rem;
     font-weight: bold;
@@ -81,16 +82,17 @@
 .portfolio-section h5,
 .get-in-touch-section p,
 .our-clients p,
-.about-us-section p {
+.about-us-section p,
+.flip-section p {
     font-size: 1.2rem;
     text-align: center;
 }
 
- 
+
 .portfolio {
     position: relative;
     width: 40%;
-    height: 500px;
+    height: 450px;
     overflow: hidden;
 }
 
@@ -112,6 +114,7 @@
         width: 90%;
         left: 48%;
     }
+
     .portfolio-section {
         padding: 5rem 1.5rem;
     }
@@ -141,22 +144,23 @@
     .portfolio-section h1,
     .get-in-touch-section h2,
     .our-clients h2,
-    .about-us-section h1 {
+    .about-us-section h1 ,.flip-section h3{
         font-size: 1.8rem;
     }
 
     .portfolio-section h5,
     .get-in-touch-section p,
     .our-clients p,
-    .about-us-section p {
+    .about-us-section p,.flip-section p {
         font-size: 1rem;
         padding: 0 1rem;
     }
+
     .services-section {
         background-color: #eef6fd;
         padding: 5rem 0;
     }
-    
+
 }
 
 @media only screen and (max-width: 767px) {

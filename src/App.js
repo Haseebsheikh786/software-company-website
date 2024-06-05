@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import Services from "./Pages/Services/Services";
@@ -11,13 +13,15 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/Services" exact element={<Services />} />
-          <Route path="/About" exact element={<About />} />
-          <Route path="/Contact" exact element={<Contact />} />
-        </Routes>
-        <Footer />
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/Services" exact element={<Services />} />
+            <Route path="/About" exact element={<About />} />
+            <Route path="/Contact" exact element={<Contact />} />
+          </Routes>
+          <Footer />
+        </ScrollToTop>
       </BrowserRouter>
     </>
   );

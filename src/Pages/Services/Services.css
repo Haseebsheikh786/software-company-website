@@ -96,14 +96,6 @@
     padding: 5rem 0;
 }
 
-.flip-section h3 {
-    color: #274D82;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
-
 .flip-section-container {
     display: grid;
     justify-content: center;
@@ -298,12 +290,16 @@
 @media only screen and (max-width: 600px) {
     .flip-section-container {
         display: grid;
-        grid-template-columns: repeat(1, 95%);
+        grid-template-columns: repeat(1, 100%);
     }
 
     .flip-card {
         height: 400px;
-        margin: 0 1rem 2rem 1rem;
+    }
+    
+    .flip-card-inner{
+        margin: 0 .5rem 2rem .5rem;
+
     }
 
     .flip-card:nth-child(3) {
@@ -311,8 +307,8 @@
     }
 
     .flip-card:nth-last-child(1) {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 

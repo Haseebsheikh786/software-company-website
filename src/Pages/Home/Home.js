@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./home.css";
 import portfolio1 from "../../assets/images/sc.png";
 import portfolio2 from "../../assets/images/sc2.png";
-import portfolio3 from "../../assets/images/sc3.png";
+import portfolio3 from "../../assets/images/dc3.png";
 import portfolio4 from "../../assets/images/sc4.png";
 import image from "../../assets/images/MyPIC.jpg";
 import image2 from "../../assets/images/1.jpg";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Services.css"; // Import CSS file for styling
 import WhoWeAre from "../../assets/images/offer.jpg";
 import client1 from "../../assets/images/clientLogo3.png";
@@ -46,6 +46,7 @@ const Services = () => {
     // Add more services as needed
   ];
 
+  
   return (
     <>
       <AnimatedSection animationType="translateY" animationDistance="300px">
@@ -139,9 +140,8 @@ const Services = () => {
         direction="down"
       >
         <section className="flip-section">
-          <h3 className="text-center mb-5">
-            Choose Our Flexible Pricing Plan For Customizing Software
-          </h3>
+          <h3 className="text-center">Customize Your Software Solution</h3>
+          <p className="mb-5">Flexible pricing plans tailored to your business needs</p>
           <div className="flip-section-container">
             <div class="flip-card">
               <div className="flip-card-inner">
