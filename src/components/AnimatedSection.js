@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring";
 
 const AnimatedSection = ({
   children,
-  threshold = 0.4,
+  threshold = 0.1,
   animationType = "translateY",
   animationDistance = "100px",
   triggerOnce = true,

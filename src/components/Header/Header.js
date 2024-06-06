@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logoBlue (2).png";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import { Button } from "reactstrap";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

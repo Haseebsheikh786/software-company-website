@@ -1,7 +1,7 @@
 /* about top section */
 .about-section {
     height: 83vh;
-    background-image: url("../../assets/images/bg-image.avif");
+    background-image: url("../../assets/images/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,7 +146,6 @@
 .about-team {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1.7rem;
 }
 
 .icon {

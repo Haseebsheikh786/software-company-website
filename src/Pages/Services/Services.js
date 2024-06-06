@@ -61,7 +61,7 @@ const Services = () => {
         animationType="translateY"
         animationDistance="300px"
         direction="down"
-        threshold="0.3"
+        threshold="0.1"
       >
         <section className="services-section">
           <div className="services-grid">
@@ -82,7 +82,7 @@ const Services = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.1"
+        threshold="0"
         direction="down"
       >
         <div className="AboutContainer ServiceAboutContainer">
@@ -136,7 +136,7 @@ const Services = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.2"
+        threshold="0"
         direction="down"
       >
         <section className="flip-section">
@@ -148,11 +148,9 @@ const Services = () => {
                 <div class="flip-card-front flip-card-front1">
                   <div class="overlay">
                     <h1>Starter</h1>
-                    <Link to="/contact">
                       <button className="btn btn-secondary btn-sm">
                         Read more
                       </button>
-                    </Link>
                   </div>
                 </div>
                 <div className="flip-card-back">
@@ -191,11 +189,9 @@ const Services = () => {
                 <div class="flip-card-front flip-card-front2">
                   <div class="overlay">
                     <h1>Medium</h1>
-                    <Link to="/contact">
                       <button className="btn btn-light btn-sm">
                         Read more
                       </button>
-                    </Link>
                   </div>
                 </div>
                 <div className="flip-card-back">
@@ -234,11 +230,11 @@ const Services = () => {
                 <div class="flip-card-front flip-card-front3">
                   <div class="overlay">
                     <h1>Custom</h1>
-                    <Link to="/contact">
+                   
                       <button className="btn btn-success btn-sm">
                         Read more
                       </button>
-                    </Link>
+                  
                   </div>
                 </div>
                 <div className="flip-card-back">
@@ -308,7 +304,7 @@ const Services = () => {
         animationType="translateY"
         animationDistance="300px"
         direction="down"
-        threshold="0.2"
+        threshold="0.1"
       >
         <section className="get-in-touch-section get-in-touch-section-service">
           <h2>Get in Touch</h2>

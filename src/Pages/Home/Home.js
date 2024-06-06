@@ -93,7 +93,7 @@ const Portfolio = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.3"
+        threshold="0.1"
         direction="down"
       >
         <section className="services-section">
@@ -112,7 +112,7 @@ const Portfolio = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.1"
+        threshold="0"
         direction="down"
       >
         <section className="portfolio-section">
@@ -158,7 +158,7 @@ const Portfolio = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.1"
+        threshold="0"
         direction="down"
       >
         <div className="about-us-section about-us-section-color">
@@ -167,7 +167,7 @@ const Portfolio = () => {
             Our main purpose is to provide attractive and amazing designs while
             maintaining strict quality standards
           </p>
-          <div className="d-flex flex-column align-items-center mt-4">
+          <div className="d-flex flex-column align-items-center mt-5">
             <div className="icon">
               <img className="image-icon" src={image} />
             </div>
@@ -181,7 +181,7 @@ const Portfolio = () => {
               At H WEB Dynamics, we have been helping our clients to tell their
               story since 2022, making sure they reach a wider audience
             </p>
-            <div className="about-team">
+            <div className="about-team mt-5">
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
                   <img className="image-icon" src={image} />

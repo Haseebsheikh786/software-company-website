@@ -52,7 +52,7 @@ const ContactUS = () => {
       <AnimatedSection
         animationType="translateY"
         animationDistance="300px"
-        threshold="0.2"
+        threshold="0.1"
         direction="down"
       >
         <div className="contact-container">
