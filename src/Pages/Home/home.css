@@ -28,7 +28,7 @@
     width: 40vw;
     position: absolute;
     top: 56%;
-    left: 26%;
+    left: 24%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
@@ -111,6 +111,17 @@
 
 
 /* home section media quereies  */
+@media only screen and (max-width: 1480px) {
+    .home-content {
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 1160px) {
+    .home-content {
+        left: 26%;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .home-content {
         width: 90%;

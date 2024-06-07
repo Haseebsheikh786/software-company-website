@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./home.css";
 import portfolio1 from "../../assets/images/sc.png";
 import portfolio2 from "../../assets/images/sc2.png";
-import portfolio3 from "../../assets/images/dc3.png";
+import portfolio3 from "../../assets/images/sc3.png";
 import portfolio4 from "../../assets/images/sc4.png";
 import image from "../../assets/images/MyPIC.jpg";
 import image2 from "../../assets/images/1.jpg";
@@ -38,7 +38,7 @@ const servicesData = [
   // Add more services as needed
 ];
 // Container with individual hover state management
-const Container = ({ children }) => {
+const Container = ({ children ,transitionSpeed }) => {
   const [isHovered, setIsHovered] = useState(false);
   const contentRef = useRef(null);
   const [topOffset, setTopOffset] = useState("0");
@@ -58,7 +58,7 @@ const Container = ({ children }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Content ref={contentRef} topOffset={topOffset}>
+      <Content ref={contentRef} topOffset={topOffset} transitionSpeed={transitionSpeed}>
         {children}
       </Content>
     </div>
@@ -68,7 +68,7 @@ const Container = ({ children }) => {
 const Content = styled.div`
   position: absolute;
   top: ${(props) => props.topOffset};
-  transition: top 15s ease;
+  transition: top ${(props) => props.transitionSpeed} ease;
 `;
 
 // The main Portfolio section
@@ -122,14 +122,14 @@ const Portfolio = () => {
             clients
           </h5>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between">
-            <Container>
+          <Container transitionSpeed="12s">
               <img
                 src={portfolio3}
                 style={{ width: "100%", objectFit: "contain" }}
                 alt="portfolio"
               />
             </Container>
-            <Container>
+            <Container transitionSpeed="12s">
               <img
                 src={portfolio4}
                 style={{ width: "100%", objectFit: "contain" }}
@@ -138,14 +138,14 @@ const Portfolio = () => {
             </Container>
           </div>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between pt-md-5 mt-md-3">
-            <Container>
+          <Container transitionSpeed="20s">
               <img
                 src={portfolio1}
                 style={{ width: "100%", objectFit: "contain" }}
                 alt="portfolio"
               />
             </Container>
-            <Container>
+            <Container transitionSpeed="12s">
               <img
                 src={portfolio2}
                 style={{ width: "100%", objectFit: "contain" }}
