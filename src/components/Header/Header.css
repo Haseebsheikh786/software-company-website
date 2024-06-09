@@ -69,7 +69,7 @@
 /* Media query for toggle menu */
 @media screen and (max-width: 950px) {
     .navbar {
-        padding: 12px;
+        padding: 12px 12px 12px 22px;
     }
 
     .nav-links {

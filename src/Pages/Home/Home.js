@@ -5,7 +5,7 @@ import portfolio1 from "../../assets/images/sc.png";
 import portfolio2 from "../../assets/images/sc2.png";
 import portfolio3 from "../../assets/images/sc3.png";
 import portfolio4 from "../../assets/images/sc4.png";
-import image from "../../assets/images/MyPIC.jpg";
+import image from "../../assets/images/founder.jpg";
 import image2 from "../../assets/images/1.jpg";
 import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
 import styled from "styled-components";
