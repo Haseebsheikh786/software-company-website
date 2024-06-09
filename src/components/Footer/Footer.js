@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logoBlue (2).png";
+import logo from "../../assets/images/logo12 (1).png";
 import { NavLink } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
