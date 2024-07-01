@@ -63,7 +63,7 @@
 
 .btn {
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 /* Media query for toggle menu */
@@ -82,7 +82,7 @@
         left: 0;
         transition: all 0.5s ease-in;
         align-items: start;
-        padding: 0 1.6rem;
+        padding: 0 1.8rem;
         line-height: 45px;
     }
 
@@ -97,5 +97,11 @@
 
     .burger {
         display: flex;
+    }
+
+    .btnQuote {
+        margin-top: .8rem;
+        /* background-color: rgb(10, 10, 68); */
+        color: white;
     }
 }
