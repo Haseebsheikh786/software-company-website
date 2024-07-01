@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-logo">
           <img src={logo} alt="Company Logo" />
         </div>
-        </div>
+      </div>
       <div className="footer-row">
         <nav className="footer-nav">
           <NavLink to="/FAQ">Home</NavLink>
@@ -25,30 +25,43 @@ const Footer = () => {
 
       <div className="footer-row">
         <div className="footer-social">
-          <a href="https://facebook.com">
+          <a
+            href="https://www.facebook.com/profile.php?id=61560439155692&mibextid=ZbWKwL"
+            target="blank"
+          >
             <FaFacebook />
           </a>
-          <a href="https://instagram.com">
+          <a
+            href="https://www.instagram.com/hwebdynamics?igsh=MXFyNmZlNGV0ajdqYg=="
+            target="blank"
+          >
             <FaInstagram />
           </a>
-          <a href="https://twitter.com">
+          <a
+            href="https://www.linkedin.com/company/h-web-dynamics/"
+            target="blank"
+          >
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://instagram.com" target="blank">
             <MdMail />
           </a>
-          <a href="tel:+923427282514" style={{ textDecoration: "none" }}>
+          <a
+            href="tel:+923427282514"
+            style={{ textDecoration: "none" }}
+            target="blank"
+          >
             <MdPhone />
           </a>
         </div>
       </div>
       <div className="footer-row">
-        <p>&copy; 2024 H WEB Dynamics. All rights reserved.</p>
+        <p>&copy; 2024 H WEB DYNAMICS. All rights reserved.</p>
       </div>
     </footer>
   );
 };
- 
+
 export default Footer;
 // child    :       <template>
 //   <div class="d-flex flex-column mt-5 pt-5 text-center">

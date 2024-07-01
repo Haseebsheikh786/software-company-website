@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./About.css"; // Import CSS file for styling
 import { Link } from "react-router-dom";
 import { Card, Col, Container, Label, Row } from "reactstrap";
-import WhoWeAre from "../../assets/images/team4.jpg";
 import image from "../../assets/images/MyPIC.jpg";
 import image2 from "../../assets/images/1.jpg";
 import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";

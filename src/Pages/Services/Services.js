@@ -5,7 +5,6 @@ import client1 from "../../assets/images/clientLogo3.png";
 import client2 from "../../assets/images/clientLogo2.png";
 import client3 from "../../assets/images/clientLogo1.png";
 import client5 from "../../assets/images/devikons.png";
-import client7 from "../../assets/images/apple-touch-icon-120x120.png";
 import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa6";
