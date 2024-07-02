@@ -178,7 +178,7 @@ const Portfolio = () => {
             {" "}
             <h1 className="text-center">Meet our leadership</h1>
             <p className="text-center">
-              At H WEB Dynamics, we have been helping our clients to tell their
+              At H WEB DYNAMICS, we have been helping our clients to tell their
               story since 2022, making sure they reach a wider audience
             </p>
             <div className="about-team mt-5">

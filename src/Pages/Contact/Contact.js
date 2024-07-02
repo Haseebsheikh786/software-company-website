@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
-import { Card, FormGroup, Input, Label ,Spinner} from "reactstrap";
+import { Card, FormGroup, Input, Label, Spinner } from "reactstrap";
 import { MdMail, MdPhone } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import "./Contact.css";
@@ -69,15 +69,15 @@ const ContactUS = () => {
                     <FaLocationDot className="location-icon" />
                   </div>
                   <b>
-                    International House, The McLaren Building, 46 The Priory
-                    Queensway, Birmingham, B4 7LR, Birmingham, United Kingdom
+                    PX33+2MX Butt Plaza, Grand Trunk Rd, Lalamusa, Gujrat,
+                    Punjab
                   </b>
                 </h5>
               </Card>
               <Card className="py-3 cards">
                 <h5 className="d-flex mb-0">
                   <MdMail className="" />
-                  <b>info@hwebdynamics.com</b>
+                  <b>hwebdynamics@gmail.com</b>
                 </h5>
               </Card>
               <Card className="py-3 cards">
@@ -89,7 +89,7 @@ const ContactUS = () => {
               <Card className="py-3 cards">
                 <h5 className="d-flex mb-0">
                   <MdPhone className="" />
-                  <b>+92 (0) 318 7243 073</b>
+                  <b>+92 (0) 318 1357 173</b>
                 </h5>
               </Card>
             </div>
@@ -114,7 +114,7 @@ const ContactUS = () => {
               </FormGroup>
               <div className="text-end m-2">
                 <button className="btn btn-primary" type="submit">
-                {preloader === true ? <Spinner size="sm" /> : "Submit"}
+                  {preloader === true ? <Spinner size="sm" /> : "Submit"}
                 </button>
               </div>
               <p className="mt-3">

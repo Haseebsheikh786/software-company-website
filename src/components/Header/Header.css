@@ -84,7 +84,7 @@
         align-items: start;
         padding: 0 1.8rem;
         line-height: 45px;
-    }
+    }   
 
     .nav-links.active {
         display: flex;

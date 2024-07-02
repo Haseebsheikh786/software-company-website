@@ -43,7 +43,11 @@ const Footer = () => {
           >
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="blank">
+          <a
+            href="mailto:hwebdynamics@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MdMail />
           </a>
           <a

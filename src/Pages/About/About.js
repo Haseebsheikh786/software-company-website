@@ -3,6 +3,7 @@ import "./About.css"; // Import CSS file for styling
 import { Link } from "react-router-dom";
 import { Card, Col, Container, Label, Row } from "reactstrap";
 import image from "../../assets/images/MyPIC.jpg";
+import about from "../../assets/images/about.avif";
 import image2 from "../../assets/images/1.jpg";
 import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
 import { MdArrowRight } from "react-icons/md";
@@ -16,7 +17,7 @@ const AboutUs = () => {
         <div className="about-section">
           <div className="about-content">
             <h1>About Us</h1>
-            <h3>Welcome to H WEB Dynamics</h3>
+            <h3>Welcome to H WEB DYNAMICS</h3>
             <p>Quality, Efficiency, and Loyalty are our core values.</p>
           </div>
           <div className="cards-container">
@@ -70,13 +71,13 @@ const AboutUs = () => {
         >
           <div className="AboutContainer">
             <div className="col-sm-12 col-lg-5 team-image">
-              <img src="https://img.freepik.com/free-photo/group-people-throwing-money-office_1303-15891.jpg?t=st=1717587477~exp=1717591077~hmac=b1a2299a5f17d4ffbc33c0a2a24fb6f5e34ad68b35b9ac00a4676e2781d6a130&w=900" />
+              <img src={about} />
             </div>
             <div className="col-sm-12 col-lg-6 serviceProcessList">
-              <h1 className="mb-3">Team H WEB Dynamics</h1>
+              <h1 className="mb-3">Team H WEB DYNAMICS</h1>
               <p>
                 Developing a website and mobile app is a masterful field.
-                H WEB Dynamics is a cross-useful software advancement
+                H WEB DYNAMICS is a cross-useful software advancement
                 organization focused on planning and conveying new computerized
                 tools and services to organizations across enterprises and
                 verticals. We stick to a proactive, dynamic, and result-situated
@@ -114,7 +115,7 @@ const AboutUs = () => {
             {" "}
             <h1 className="text-center">Meet our leadership</h1>
             <p className="text-center">
-              At H WEB Dynamics, we have been helping our clients to tell their
+              At H WEB DYNAMICS, we have been helping our clients to tell their
               story since 2022, making sure they reach a wider audience
             </p>
             <div className="about-team mt-5">
