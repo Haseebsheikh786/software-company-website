@@ -44,7 +44,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:hwebdynamics@gmail.com"
+            href="mailto:hwebdynamic@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
