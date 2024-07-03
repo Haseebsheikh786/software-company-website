@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./About.css"; // Import CSS file for styling
 import { Link } from "react-router-dom";
 import { Card, Col, Container, Label, Row } from "reactstrap";
-import about from "../../assets/images/about.avif";
+import about from "../../assets/images/about (1).jpg";
 import image from "../../assets/images/founder.jpg";
 import image2 from "../../assets/images/tabish.jpg";
 import image3 from "../../assets/images/talha.jpg";

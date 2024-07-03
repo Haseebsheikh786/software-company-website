@@ -11,6 +11,8 @@ import image3 from "../../assets/images/talha.jpg";
 import image4 from "../../assets/images/subhan.jpg";
 import styled from "styled-components";
 import AnimatedSection from "../../components/AnimatedSection";
+import LazyLoad from "react-lazyload";
+
 const servicesData = [
   {
     title: "Software Development",
@@ -39,7 +41,7 @@ const servicesData = [
   // Add more services as needed
 ];
 // Container with individual hover state management
-const Container = ({ children ,transitionSpeed }) => {
+const Container = ({ children, transitionSpeed }) => {
   const [isHovered, setIsHovered] = useState(false);
   const contentRef = useRef(null);
   const [topOffset, setTopOffset] = useState("0");
@@ -59,7 +61,11 @@ const Container = ({ children ,transitionSpeed }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Content ref={contentRef} topOffset={topOffset} transitionSpeed={transitionSpeed}>
+      <Content
+        ref={contentRef}
+        topOffset={topOffset}
+        transitionSpeed={transitionSpeed}
+      >
         {children}
       </Content>
     </div>
@@ -123,35 +129,43 @@ const Portfolio = () => {
             clients
           </h5>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between">
-          <Container transitionSpeed="12s">
-              <img
-                src={portfolio3}
-                style={{ width: "100%", objectFit: "contain" }}
-                alt="portfolio"
-              />
+            <Container transitionSpeed="12s">
+              <LazyLoad>
+                <img
+                  src={portfolio3}
+                  style={{ width: "100%", objectFit: "contain" }}
+                  alt="portfolio"
+                />
+              </LazyLoad>
             </Container>
             <Container transitionSpeed="12s">
-              <img
-                src={portfolio4}
-                style={{ width: "100%", objectFit: "contain" }}
-                alt="portfolio"
-              />
+              <LazyLoad>
+                <img
+                  src={portfolio4}
+                  style={{ width: "100%", objectFit: "contain" }}
+                  alt="portfolio"
+                />
+              </LazyLoad>
             </Container>
           </div>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between pt-md-5 mt-md-3">
-          <Container transitionSpeed="20s">
-              <img
-                src={portfolio1}
-                style={{ width: "100%", objectFit: "contain" }}
-                alt="portfolio"
-              />
+            <Container transitionSpeed="20s">
+              <LazyLoad>
+                <img
+                  src={portfolio1}
+                  style={{ width: "100%", objectFit: "contain" }}
+                  alt="portfolio"
+                />
+              </LazyLoad>
             </Container>
             <Container transitionSpeed="12s">
-              <img
-                src={portfolio2}
-                style={{ width: "100%", objectFit: "contain" }}
-                alt="portfolio"
-              />
+              <LazyLoad>
+                <img
+                  src={portfolio2}
+                  style={{ width: "100%", objectFit: "contain" }}
+                  alt="portfolio"
+                />
+              </LazyLoad>
             </Container>
           </div>
         </section>
@@ -170,7 +184,7 @@ const Portfolio = () => {
           </p>
           <div className="d-flex flex-column align-items-center mt-5">
             <div className="icon">
-              <img className="image-icon" src={image} />
+              <img className="image-icon" src={image} alt="FOUNDER" />
             </div>
             <h5>Haseeb Farrukh</h5>
             <h6>FOUNDER</h6>
