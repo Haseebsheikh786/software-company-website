@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import "./About.css"; // Import CSS file for styling
 import { Link } from "react-router-dom";
 import { Card, Col, Container, Label, Row } from "reactstrap";
-import image from "../../assets/images/MyPIC.jpg";
 import about from "../../assets/images/about.avif";
-import image2 from "../../assets/images/1.jpg";
-import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
+import image from "../../assets/images/founder.jpg";
+import image2 from "../../assets/images/tabish.jpg";
+import image3 from "../../assets/images/talha.jpg";
+import image4 from "../../assets/images/subhan.jpg";
 import { MdArrowRight } from "react-icons/md";
 import AnimatedSection from "../../components/AnimatedSection";
 
 const AboutUs = () => {
-   
   return (
     <>
       <AnimatedSection animationType="translateY" animationDistance="300px">
@@ -76,17 +76,17 @@ const AboutUs = () => {
             <div className="col-sm-12 col-lg-6 serviceProcessList">
               <h1 className="mb-3">Team H WEB DYNAMICS</h1>
               <p>
-                Developing a website and mobile app is a masterful field.
-                H WEB DYNAMICS is a cross-useful software advancement
-                organization focused on planning and conveying new computerized
-                tools and services to organizations across enterprises and
-                verticals. We stick to a proactive, dynamic, and result-situated
-                way to deal with and guarantee that we bring typically effective
-                results. We are energetic about what we do. Our architects and
-                digital analysts utilize their strong aptitude to offer
-                achievement arranged vectors for our customers. Client
-                assistance engineers guarantee the apparatuses we work for our
-                customers to satisfy their clients.
+                Developing a website and mobile app is a masterful field. H WEB
+                DYNAMICS is a cross-useful software advancement organization
+                focused on planning and conveying new computerized tools and
+                services to organizations across enterprises and verticals. We
+                stick to a proactive, dynamic, and result-situated way to deal
+                with and guarantee that we bring typically effective results. We
+                are energetic about what we do. Our architects and digital
+                analysts utilize their strong aptitude to offer achievement
+                arranged vectors for our customers. Client assistance engineers
+                guarantee the apparatuses we work for our customers to satisfy
+                their clients.
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ const AboutUs = () => {
         threshold="0"
         direction="down"
       >
-       <div className="about-us-section">
+        <div className="about-us-section">
           <h1 className="text-center">Amazing Designs and Quality Work</h1>
           <p className="text-center">
             Our main purpose is to provide attractive and amazing designs while
@@ -121,27 +121,27 @@ const AboutUs = () => {
             <div className="about-team mt-5">
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image2} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
+                <h5>Raja Tabish</h5>
                 <h6>FOUNDER</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
                   <img className="image-icon" src={image3} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
-                <h6>Director</h6>
+                <h5>Talha Shamshad</h5>
+                <h6>DIRECTOR</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image2} />
+                  <img className="image-icon" src={image4} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
+                <h5>Subhan Sheikh</h5>
                 <h6>C.T.O</h6>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
       </AnimatedSection>
     </>

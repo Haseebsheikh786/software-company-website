@@ -6,8 +6,9 @@ import portfolio2 from "../../assets/images/sc2.png";
 import portfolio3 from "../../assets/images/sc3.png";
 import portfolio4 from "../../assets/images/sc4.png";
 import image from "../../assets/images/founder.jpg";
-import image2 from "../../assets/images/1.jpg";
-import image3 from "../../assets/images/IMG-20220130-WA0097.jpg";
+import image2 from "../../assets/images/tabish.jpg";
+import image3 from "../../assets/images/talha.jpg";
+import image4 from "../../assets/images/subhan.jpg";
 import styled from "styled-components";
 import AnimatedSection from "../../components/AnimatedSection";
 const servicesData = [
@@ -184,23 +185,23 @@ const Portfolio = () => {
             <div className="about-team mt-5">
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image} />
+                  <img className="image-icon" src={image2} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
+                <h5>Raja Tabish</h5>
                 <h6>FOUNDER</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
                   <img className="image-icon" src={image3} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
-                <h6>Director</h6>
+                <h5>Talha Shamshad</h5>
+                <h6>DIRECTOR</h6>
               </div>
               <div className="team-card d-flex flex-column align-items-center">
                 <div className="icon">
-                  <img className="image-icon" src={image2} />
+                  <img className="image-icon" src={image4} />
                 </div>
-                <h5>Haseeb Farrukh</h5>
+                <h5>Subhan Sheikh</h5>
                 <h6>C.T.O</h6>
               </div>
             </div>
