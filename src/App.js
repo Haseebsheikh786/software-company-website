@@ -2,12 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import Services from "./Pages/Services/Services";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import Error from "./components/Forbidden";
 function App() {
   return (
     <>
@@ -19,6 +19,8 @@ function App() {
             <Route path="/Services" exact element={<Services />} />
             <Route path="/About" exact element={<About />} />
             <Route path="/Contact" exact element={<Contact />} />
+            <Route path="*" element={<Error />} /> 
+
           </Routes>
           <Footer />
         </ScrollToTop>
@@ -28,7 +30,4 @@ function App() {
 }
 
 export default App;
-
-// CodeZento
-// WebHarb
-// CodeStreamix
+ 

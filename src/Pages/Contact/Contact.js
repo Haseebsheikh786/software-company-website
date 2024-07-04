@@ -68,7 +68,7 @@ const ContactUS = () => {
                   <div>
                     <FaLocationDot className="location-icon" />
                   </div>
-                  <b>
+                   <b>
                     PX33+2MX Butt Plaza, Grand Trunk Rd, Lalamusa, Gujrat,
                     Punjab
                   </b>
@@ -77,7 +77,7 @@ const ContactUS = () => {
               <Card className="py-3 cards">
                 <h5 className="d-flex mb-0">
                   <MdMail className="" />
-                  <b>hwebdynamics@gmail.com</b>
+                  <b>hwebdynamic@gmail.com</b>
                 </h5>
               </Card>
               <Card className="py-3 cards">

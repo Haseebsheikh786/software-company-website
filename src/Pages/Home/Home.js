@@ -90,7 +90,7 @@ const Portfolio = () => {
             <p>
               We have expertise in Website Development and Desktop applications
             </p>
-            <Link to="/demo" className="btn btn-primary home-content-btn">
+            <Link to="tel:+923427282514"  className="btn btn-primary home-content-btn">
               GET STARTED
             </Link>
           </div>

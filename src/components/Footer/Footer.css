@@ -58,3 +58,7 @@ p {
         font-size: .9rem;
     }
 }
+
+.errorContainer{
+    padding: 11rem 0 5rem 0;
+}

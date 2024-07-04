@@ -94,7 +94,7 @@ const Services = () => {
               <h3>1: Understand client Vision</h3>
               <p>
                 Comprehending the consumer's Requirements and enterprise
-                specifications is important. At Code Zento, we beleive in
+                specifications is important. At H WEB DYNAMICS, we beleive in
                 meeting client needs with enhanced quality of work and
                 productivity
               </p>

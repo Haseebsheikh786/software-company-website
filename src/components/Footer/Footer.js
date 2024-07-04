@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       <div className="footer-row">
         <nav className="footer-nav">
-          <NavLink to="/FAQ">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/contact">Contact Us</NavLink>

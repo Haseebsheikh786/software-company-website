@@ -76,7 +76,7 @@ const AboutUs = () => {
             <div className="col-sm-12 col-lg-6 serviceProcessList">
               <h1 className="mb-3">Team H WEB DYNAMICS</h1>
               <p>
-                Developing a website and mobile app is a masterful field. H WEB
+                Developing a website is a masterful field. H WEB
                 DYNAMICS is a cross-useful software advancement organization
                 focused on planning and conveying new computerized tools and
                 services to organizations across enterprises and verticals. We
