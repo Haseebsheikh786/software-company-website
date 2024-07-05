@@ -11,8 +11,7 @@ import image3 from "../../assets/images/talha.jpg";
 import image4 from "../../assets/images/subhan.jpg";
 import styled from "styled-components";
 import AnimatedSection from "../../components/AnimatedSection";
-import LazyLoad from "react-lazyload";
-
+ 
 const servicesData = [
   {
     title: "Software Development",
@@ -130,42 +129,34 @@ const Portfolio = () => {
           </h5>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between">
             <Container transitionSpeed="12s">
-              <LazyLoad>
                 <img
                   src={portfolio3}
                   style={{ width: "100%", objectFit: "contain" }}
                   alt="portfolio"
                 />
-              </LazyLoad>
             </Container>
             <Container transitionSpeed="12s">
-              <LazyLoad>
                 <img
                   src={portfolio4}
                   style={{ width: "100%", objectFit: "contain" }}
                   alt="portfolio"
                 />
-              </LazyLoad>
             </Container>
           </div>
           <div className="d-md-flex justify-content-lg-around justify-content-md-between pt-md-5 mt-md-3">
             <Container transitionSpeed="20s">
-              <LazyLoad>
                 <img
                   src={portfolio1}
                   style={{ width: "100%", objectFit: "contain" }}
                   alt="portfolio"
                 />
-              </LazyLoad>
             </Container>
             <Container transitionSpeed="12s">
-              <LazyLoad>
                 <img
                   src={portfolio2}
                   style={{ width: "100%", objectFit: "contain" }}
                   alt="portfolio"
                 />
-              </LazyLoad>
             </Container>
           </div>
         </section>
